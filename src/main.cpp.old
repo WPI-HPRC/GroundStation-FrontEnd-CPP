@@ -1,0 +1,37 @@
+#include <iostream>
+#include <glfw3.h>
+#include <windows.h>
+
+int main() {
+    GLFWwindow* window;
+
+    if(!glfwInit()) {
+        std::cerr << "[ERROR] GLFW Failed to Initialize" << std::endl;
+        glfwTerminate();
+        return -1;
+    }
+
+    window = glfwCreateWindow(640, 480, "Ground Station", NULL, NULL);
+    if(!window) {
+        std::cerr << "[ERROR] GLFW Failed to Initialize!" << std::endl;
+        glfwTerminate();
+        return -1;
+    }
+
+    glfwMakeContextCurrent(window);
+
+    while(!glfwWindowShouldClose(window)) {
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+
+    return 0;
+}
+
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
+    if(key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
+        glfwSetWindowShouldClose(window, TRUE);
+    }
+}
