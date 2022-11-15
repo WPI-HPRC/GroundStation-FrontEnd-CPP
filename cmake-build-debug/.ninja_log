@@ -1,15 +1,4 @@
 # ninja log v5
-2	454	6902512492264754	src/CMakeFiles/Ground_Station_Frontend_CPP.dir/main.cpp.obj	7082b30bc03fbd7
-454	604	6902512493714754	src/Ground_Station_Frontend_CPP.exe	a3ccb364a7752771
-2	447	6902515345637961	src/CMakeFiles/Ground_Station_Frontend_CPP.dir/GLFW/GLFWindow.cpp.obj	b0b11007a0774b8d
-2	442	6902515700991373	src/CMakeFiles/Ground_Station_Frontend_CPP.dir/main.cpp.obj	7082b30bc03fbd7
-443	589	6902515702431364	src/Ground_Station_Frontend_CPP.exe	74425ec6e9ce6370
-5	474	6902518744885296	src/CMakeFiles/Ground_Station_Frontend_CPP.dir/main.cpp.obj	7082b30bc03fbd7
-1	448	6902519187924002	src/CMakeFiles/Ground_Station_Frontend_CPP.dir/main.cpp.obj	7082b30bc03fbd7
-5	456	6902519187994012	src/CMakeFiles/Ground_Station_Frontend_CPP.dir/GLFW/GLFWindow.cpp.obj	b0b11007a0774b8d
-456	604	6902519189454011	src/Ground_Station_Frontend_CPP.exe	74425ec6e9ce6370
-2	469	6902519326116426	src/CMakeFiles/Ground_Station_Frontend_CPP.dir/GLFW/GLFWindow.cpp.obj	b0b11007a0774b8d
-469	615	6902519327530344	src/Ground_Station_Frontend_CPP.exe	74425ec6e9ce6370
 7	508	6902519905848690	src/CMakeFiles/Ground_Station_Frontend_CPP.dir/main.cpp.obj	7082b30bc03fbd7
-2	417	6902520533581687	src/CMakeFiles/Ground_Station_Frontend_CPP.dir/GLFW/GLFWindow.cpp.obj	b0b11007a0774b8d
 417	562	6902520534972006	src/Ground_Station_Frontend_CPP.exe	74425ec6e9ce6370
+2	417	6902520533581687	src/CMakeFiles/Ground_Station_Frontend_CPP.dir/GLFW/GLFWindow.cpp.obj	b0b11007a0774b8d
