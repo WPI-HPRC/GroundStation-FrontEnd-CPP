@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Blind\Desktop\Workspace\HPRC\Ground-Station-Frontend-CPP\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blind\Desktop\Workspace\HPRC\Ground-Station-Frontend-CPP\src\GLFW\GLFWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blind\Desktop\Workspace\HPRC\Ground-Station-Frontend-CPP\src\libs\imgui_impl_glfw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Blind\Desktop\Workspace\HPRC\Ground-Station-Frontend-CPP\src\libs\imgui_impl_opengl3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Blind\Desktop\Workspace\HPRC\Ground-Station-Frontend-CPP\src\GLFW\GLFWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Blind\Desktop\Workspace\HPRC\Ground-Station-Frontend-CPP\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{467C0A53-8070-3196-A60F-D5886F050917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7A800B61-F06A-3FE2-819F-6DF1C6458CF3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeFindDependencyMacro.cmake
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/src/CMakeLists.txt
+C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake
+C:/vcpkg/installed/x64-windows/share/glfw3/glfw3ConfigVersion.cmake
+C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets-debug.cmake
+C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets-release.cmake
+C:/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets.cmake
+C:/vcpkg/installed/x64-windows/share/imgui/imgui-config.cmake
+C:/vcpkg/installed/x64-windows/share/imgui/imgui-targets-debug.cmake
+C:/vcpkg/installed/x64-windows/share/imgui/imgui-targets-release.cmake
+C:/vcpkg/installed/x64-windows/share/imgui/imgui-targets.cmake
+C:/vcpkg/scripts/buildsystems/vcpkg.cmake

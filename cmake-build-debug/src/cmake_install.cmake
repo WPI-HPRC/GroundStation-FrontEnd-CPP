@@ -37,3 +37,8 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "C:/MinGW/bin/objdump.exe")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/_deps/imgui-glfw-glad-glm-build/cmake_install.cmake")
+endif()
+

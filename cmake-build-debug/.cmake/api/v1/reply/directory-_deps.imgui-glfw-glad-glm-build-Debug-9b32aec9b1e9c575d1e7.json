@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/imgui-glfw-glad-glm-build",
+		"source" : "cmake-build-debug/_deps/imgui-glfw-glad-glm-src"
+	}
+}

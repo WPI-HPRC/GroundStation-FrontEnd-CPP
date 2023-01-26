@@ -1,37 +1,57 @@
-#include <iostream>
-#include <glfw3.h>
-#include <windows.h>
+#include "GLFW/GLFWindow.h"
+#include "settings.h"
+
+#include <stdio.h>
+#include <imgui.h>
+
+//Include files for IMGUI GLFW and OpenGL implementation
+#include <imgui_impl_opengl3.h>
+#include <imgui_impl_glfw.h>
+
+GLFWindow mainWindow = GLFWindow();
+
+struct {
+    Themes currentTheme = DARK_MODE; // Dark Mode by default
+} windowSettings;
 
 int main() {
-    GLFWwindow* window;
+    mainWindow.windowInit();
 
-    if(!glfwInit()) {
-        std::cerr << "[ERROR] GLFW Failed to Initialize" << std::endl;
-        glfwTerminate();
-        return -1;
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    ImGuiIO& io = ImGui::GetIO(); (void) io;
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; //Enable Keyboard Control
+
+    // Handle window theme
+    switch(windowSettings.currentTheme) {
+        case LIGHT_MODE:
+            ImGui::StyleColorsLight();
+            break;
+        case DARK_MODE:
+            ImGui::StyleColorsDark();
+            break;
     }
 
-    window = glfwCreateWindow(640, 480, "Ground Station", NULL, NULL);
-    if(!window) {
-        std::cerr << "[ERROR] GLFW Failed to Initialize!" << std::endl;
-        glfwTerminate();
-        return -1;
+    //Setup backend renderer
+    ImGui_ImplGlfw_InitForOpenGL(mainWindow.window, true);
+    if(mainWindow.glsl_version == "") {
+        fprintf(stderr, "[ERROR]: No GLSL Version found!!");
     }
+    ImGui_ImplOpenGL3_Init("#version 450 core");
 
-    glfwMakeContextCurrent(window);
+    bool show_demo_window = true;
+    bool show_another_window = true;
+    ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
-    while(!glfwWindowShouldClose(window)) {
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        glfwSwapBuffers(window);
+    while(!glfwWindowShouldClose(mainWindow.window)) {
         glfwPollEvents();
+
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+        ImGui::ShowDemoWindow(&show_demo_window);
+
     }
 
-    return 0;
-}
 
-void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
-    if(key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
-        glfwSetWindowShouldClose(window, TRUE);
-    }
-}
+};

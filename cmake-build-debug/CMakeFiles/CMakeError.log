@@ -1,0 +1,1078 @@
+Determining if the __GLIBC__ exist failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_d29da && [1/2] Building C object CMakeFiles/cmTC_d29da.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_d29da.dir/CheckSymbolExists.c.obj 
+C:\MinGW\bin\gcc.exe    -o CMakeFiles/cmTC_d29da.dir/CheckSymbolExists.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: '__GLIBC__' undeclared (first use in this function)
+   return ((int*)(&__GLIBC__))[argc];
+                   ^~~~~~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GLIBC__
+  return ((int*)(&__GLIBC__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_X64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_8d9b9 && [1/2] Building C object CMakeFiles/cmTC_8d9b9.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_8d9b9.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_X64   -o CMakeFiles/cmTC_8d9b9.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__amd64__) || defined(__amd64) || defined(__x86_64__) || defined(__x86_64) || defined(_M_X64) || defined(_M_AMD64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM32 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_b48a9 && [1/2] Building C object CMakeFiles/cmTC_b48a9.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_b48a9.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_ARM32   -o CMakeFiles/cmTC_b48a9.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__arm__) || defined(_M_ARM)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_ad74f && [1/2] Building C object CMakeFiles/cmTC_ad74f.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_ad74f.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_ARM64   -o CMakeFiles/cmTC_ad74f.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__aarch64__) || defined(_M_ARM64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_LOONGARCH64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_4c6a4 && [1/2] Building C object CMakeFiles/cmTC_4c6a4.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_4c6a4.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_LOONGARCH64   -o CMakeFiles/cmTC_4c6a4.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__loongarch64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Determining if the __GLIBC__ exist failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_643e0 && [1/2] Building C object CMakeFiles/cmTC_643e0.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_643e0.dir/CheckSymbolExists.c.obj 
+C:\MinGW\bin\gcc.exe    -o CMakeFiles/cmTC_643e0.dir/CheckSymbolExists.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: '__GLIBC__' undeclared (first use in this function)
+   return ((int*)(&__GLIBC__))[argc];
+                   ^~~~~~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GLIBC__
+  return ((int*)(&__GLIBC__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_X64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_5495a && [1/2] Building C object CMakeFiles/cmTC_5495a.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_5495a.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_X64   -o CMakeFiles/cmTC_5495a.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__amd64__) || defined(__amd64) || defined(__x86_64__) || defined(__x86_64) || defined(_M_X64) || defined(_M_AMD64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM32 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_9f536 && [1/2] Building C object CMakeFiles/cmTC_9f536.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_9f536.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_ARM32   -o CMakeFiles/cmTC_9f536.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__arm__) || defined(_M_ARM)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_0c30d && [1/2] Building C object CMakeFiles/cmTC_0c30d.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_0c30d.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_ARM64   -o CMakeFiles/cmTC_0c30d.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__aarch64__) || defined(_M_ARM64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_LOONGARCH64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_bbd32 && [1/2] Building C object CMakeFiles/cmTC_bbd32.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_bbd32.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_LOONGARCH64   -o CMakeFiles/cmTC_bbd32.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__loongarch64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Determining if the __GLIBC__ exist failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_bb0e9 && [1/2] Building C object CMakeFiles/cmTC_bb0e9.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_bb0e9.dir/CheckSymbolExists.c.obj 
+C:\MinGW\bin\gcc.exe    -o CMakeFiles/cmTC_bb0e9.dir/CheckSymbolExists.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: '__GLIBC__' undeclared (first use in this function)
+   return ((int*)(&__GLIBC__))[argc];
+                   ^~~~~~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GLIBC__
+  return ((int*)(&__GLIBC__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_X64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_1855c && [1/2] Building C object CMakeFiles/cmTC_1855c.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_1855c.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_X64   -o CMakeFiles/cmTC_1855c.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__amd64__) || defined(__amd64) || defined(__x86_64__) || defined(__x86_64) || defined(_M_X64) || defined(_M_AMD64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM32 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_36579 && [1/2] Building C object CMakeFiles/cmTC_36579.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_36579.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_ARM32   -o CMakeFiles/cmTC_36579.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__arm__) || defined(_M_ARM)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_d6b9e && [1/2] Building C object CMakeFiles/cmTC_d6b9e.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_d6b9e.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_ARM64   -o CMakeFiles/cmTC_d6b9e.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__aarch64__) || defined(_M_ARM64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_LOONGARCH64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_e72c7 && [1/2] Building C object CMakeFiles/cmTC_e72c7.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_e72c7.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_LOONGARCH64   -o CMakeFiles/cmTC_e72c7.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__loongarch64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Determining if the __GLIBC__ exist failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_a2b41 && [1/2] Building C object CMakeFiles/cmTC_a2b41.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_a2b41.dir/CheckSymbolExists.c.obj 
+C:\MinGW\bin\gcc.exe    -o CMakeFiles/cmTC_a2b41.dir/CheckSymbolExists.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: '__GLIBC__' undeclared (first use in this function)
+   return ((int*)(&__GLIBC__))[argc];
+                   ^~~~~~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GLIBC__
+  return ((int*)(&__GLIBC__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_X64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_2554d && [1/2] Building C object CMakeFiles/cmTC_2554d.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_2554d.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_X64   -o CMakeFiles/cmTC_2554d.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__amd64__) || defined(__amd64) || defined(__x86_64__) || defined(__x86_64) || defined(_M_X64) || defined(_M_AMD64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM32 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_666a2 && [1/2] Building C object CMakeFiles/cmTC_666a2.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_666a2.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_ARM32   -o CMakeFiles/cmTC_666a2.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__arm__) || defined(_M_ARM)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_e03b4 && [1/2] Building C object CMakeFiles/cmTC_e03b4.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_e03b4.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_ARM64   -o CMakeFiles/cmTC_e03b4.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__aarch64__) || defined(_M_ARM64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_LOONGARCH64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_5fdf4 && [1/2] Building C object CMakeFiles/cmTC_5fdf4.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_5fdf4.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_LOONGARCH64   -o CMakeFiles/cmTC_5fdf4.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__loongarch64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Determining if the __GLIBC__ exist failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_cc6c5 && [1/2] Building C object CMakeFiles/cmTC_cc6c5.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_cc6c5.dir/CheckSymbolExists.c.obj 
+C:\MinGW\bin\gcc.exe    -o CMakeFiles/cmTC_cc6c5.dir/CheckSymbolExists.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: '__GLIBC__' undeclared (first use in this function)
+   return ((int*)(&__GLIBC__))[argc];
+                   ^~~~~~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GLIBC__
+  return ((int*)(&__GLIBC__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_X64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_5855a && [1/2] Building C object CMakeFiles/cmTC_5855a.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_5855a.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_X64   -o CMakeFiles/cmTC_5855a.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__amd64__) || defined(__amd64) || defined(__x86_64__) || defined(__x86_64) || defined(_M_X64) || defined(_M_AMD64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM32 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_d90e8 && [1/2] Building C object CMakeFiles/cmTC_d90e8.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_d90e8.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_ARM32   -o CMakeFiles/cmTC_d90e8.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__arm__) || defined(_M_ARM)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_6c857 && [1/2] Building C object CMakeFiles/cmTC_6c857.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_6c857.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_ARM64   -o CMakeFiles/cmTC_6c857.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__aarch64__) || defined(_M_ARM64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_LOONGARCH64 failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_4901d && [1/2] Building C object CMakeFiles/cmTC_4901d.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_4901d.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCHECK_CPU_ARCHITECTURE_LOONGARCH64   -o CMakeFiles/cmTC_4901d.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: error: 'choke' undeclared (first use in this function)
+   choke
+   ^~~~~
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__loongarch64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_3bb27 && [1/2] Building C object CMakeFiles/cmTC_3bb27.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_3bb27.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DHAVE_ALTIVEC_H_HDR  -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -maltivec -o CMakeFiles/cmTC_3bb27.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+gcc.exe: error: unrecognized command line option '-maltivec'; did you mean '-mxsavec'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test CPU_SUPPORTS_ALTIVEC failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_83376 && [1/2] Building C object CMakeFiles/cmTC_83376.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_83376.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DCPU_SUPPORTS_ALTIVEC  -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -maltivec -o CMakeFiles/cmTC_83376.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+gcc.exe: error: unrecognized command line option '-maltivec'; did you mean '-mxsavec'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+Determining if the include file d3d11_1.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_785e4 && [1/2] Building C object CMakeFiles/cmTC_785e4.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_785e4.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_785e4.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:21: fatal error: d3d11_1.h: No such file or directory
+ #include <d3d11_1.h>
+                     ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test HAVE_D3D12_H failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_938e2 && [1/2] Building C object CMakeFiles/cmTC_938e2.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_938e2.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DHAVE_D3D12_H  -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_938e2.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:29: fatal error: winsdkver.h: No such file or directory
+       #include <winsdkver.h>
+                             ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include <winsdkver.h>
+      #include <sdkddkver.h>
+      #include <d3d12.h>
+      ID3D12Device1 *device;
+      #if WDK_NTDDI_VERSION > 0x0A000008
+      int main(int argc, char **argv) { return 0; }
+      #endif
+Determining if the include file ddraw.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_5a230 && [1/2] Building C object CMakeFiles/cmTC_5a230.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_5a230.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_5a230.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:19: fatal error: ddraw.h: No such file or directory
+ #include <ddraw.h>
+                   ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file dsound.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_76eea && [1/2] Building C object CMakeFiles/cmTC_76eea.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_76eea.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_76eea.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: fatal error: dsound.h: No such file or directory
+ #include <dsound.h>
+                    ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file dinput.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_f2313 && [1/2] Building C object CMakeFiles/cmTC_f2313.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_f2313.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_f2313.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: fatal error: dinput.h: No such file or directory
+ #include <dinput.h>
+                    ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file dxgi.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_80d74 && [1/2] Building C object CMakeFiles/cmTC_80d74.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_80d74.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_80d74.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:18: fatal error: dxgi.h: No such file or directory
+ #include <dxgi.h>
+                  ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test HAVE_XINPUT_H failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_afea4 && [1/2] Building C object CMakeFiles/cmTC_afea4.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_afea4.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DHAVE_XINPUT_H  -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_afea4.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:26: fatal error: xinput.h: No such file or directory
+       #include <xinput.h>
+                          ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include <windows.h>
+      #include <xinput.h>
+      int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_XINPUT_GAMEPAD_EX failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_aded6 && [1/2] Building C object CMakeFiles/cmTC_aded6.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_aded6.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DHAVE_XINPUT_GAMEPAD_EX  -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_aded6.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:26: fatal error: xinput.h: No such file or directory
+       #include <xinput.h>
+                          ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include <windows.h>
+      #include <xinput.h>
+      XINPUT_GAMEPAD_EX x1;
+      int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_XINPUT_STATE_EX failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_c2ebc && [1/2] Building C object CMakeFiles/cmTC_c2ebc.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_c2ebc.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DHAVE_XINPUT_STATE_EX  -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_c2ebc.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:26: fatal error: xinput.h: No such file or directory
+       #include <xinput.h>
+                          ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include <windows.h>
+      #include <xinput.h>
+      XINPUT_STATE_EX s1;
+      int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_WINDOWS_GAMING_INPUT_H failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_fd3c6 && [1/2] Building C object CMakeFiles/cmTC_fd3c6.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_fd3c6.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DHAVE_WINDOWS_GAMING_INPUT_H  -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_fd3c6.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:40: fatal error: windows.gaming.input.h: No such file or directory
+       #include <windows.gaming.input.h>
+                                        ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #define COBJMACROS
+      #include <windows.gaming.input.h>
+      __x_ABI_CWindows_CGaming_CInput_CIGamepadStatics2 *s2;
+      int main(int argc, char **argv) { return 0; }
+Determining if the include file tpcshrd.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_94f84 && [1/2] Building C object CMakeFiles/cmTC_94f84.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_94f84.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_94f84.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:21: fatal error: tpcshrd.h: No such file or directory
+ #include <tpcshrd.h>
+                     ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file roapi.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_86493 && [1/2] Building C object CMakeFiles/cmTC_86493.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_86493.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_86493.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:19: fatal error: roapi.h: No such file or directory
+ #include <roapi.h>
+                   ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file mmdeviceapi.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_b4484 && [1/2] Building C object CMakeFiles/cmTC_b4484.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_b4484.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_b4484.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:25: fatal error: mmdeviceapi.h: No such file or directory
+ #include <mmdeviceapi.h>
+                         ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file audioclient.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_b77ef && [1/2] Building C object CMakeFiles/cmTC_b77ef.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_b77ef.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_b77ef.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:25: fatal error: audioclient.h: No such file or directory
+ #include <audioclient.h>
+                         ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file sensorsapi.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_3fafd && [1/2] Building C object CMakeFiles/cmTC_3fafd.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_3fafd.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_3fafd.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:24: fatal error: sensorsapi.h: No such file or directory
+ #include <sensorsapi.h>
+                        ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file shellscalingapi.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_50c60 && [1/2] Building C object CMakeFiles/cmTC_50c60.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_50c60.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe   -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -o CMakeFiles/cmTC_50c60.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:29: fatal error: shellscalingapi.h: No such file or directory
+ #include <shellscalingapi.h>
+                             ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_1ce59 && [1/2] Building C object CMakeFiles/cmTC_1ce59.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_1ce59.dir/src.c.obj 
+C:\MinGW\bin\gcc.exe -DHAVE_ALTIVEC  -idirafter "C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/imgui-cmake/libs/SDL/src/video/khronos" -maltivec -o CMakeFiles/cmTC_1ce59.dir/src.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+gcc.exe: error: unrecognized command line option '-maltivec'; did you mean '-mxsavec'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_c0ad2 && [1/2] Building C object CMakeFiles/cmTC_c0ad2.dir/src.c.obj
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:15:3: warning: implicit declaration of function 'pthread_atfork' [-Wimplicit-function-declaration]
+   pthread_atfork(NULL, NULL, NULL);
+   ^~~~~~~~~~~~~~
+[2/2] Linking C executable cmTC_c0ad2.exe
+FAILED: cmTC_c0ad2.exe 
+cmd.exe /C "cd . && C:\MinGW\bin\gcc.exe   CMakeFiles/cmTC_c0ad2.dir/src.c.obj -o cmTC_c0ad2.exe -Wl,--out-implib,libcmTC_c0ad2.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cmd.exe /C "cd /D C:\Users\Blind\Desktop\Workspace\HPRC\Ground-Station-Frontend-CPP\cmake-build-debug\CMakeFiles\CMakeTmp && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/cmTC_c0ad2.exe -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out""
+CMakeFiles/cmTC_c0ad2.dir/src.c.obj:src.c:(.text+0x36): undefined reference to `pthread_create'
+CMakeFiles/cmTC_c0ad2.dir/src.c.obj:src.c:(.text+0x4a): undefined reference to `pthread_detach'
+CMakeFiles/cmTC_c0ad2.dir/src.c.obj:src.c:(.text+0x5e): undefined reference to `pthread_cancel'
+CMakeFiles/cmTC_c0ad2.dir/src.c.obj:src.c:(.text+0x7a): undefined reference to `pthread_join'
+CMakeFiles/cmTC_c0ad2.dir/src.c.obj:src.c:(.text+0x96): undefined reference to `pthread_atfork'
+CMakeFiles/cmTC_c0ad2.dir/src.c.obj:src.c:(.text+0xa2): undefined reference to `pthread_exit'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_73916 && [1/2] Building C object CMakeFiles/cmTC_73916.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_73916.exe
+FAILED: cmTC_73916.exe 
+cmd.exe /C "cd . && C:\MinGW\bin\gcc.exe -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_73916.dir/CheckFunctionExists.c.obj -o cmTC_73916.exe -Wl,--out-implib,libcmTC_73916.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lpthreads  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cmd.exe /C "cd /D C:\Users\Blind\Desktop\Workspace\HPRC\Ground-Station-Frontend-CPP\cmake-build-debug\CMakeFiles\CMakeTmp && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/cmTC_73916.exe -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out""
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot find -lpthreads
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file dinput.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_4213f && [1/2] Building C object CMakeFiles/cmTC_4213f.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_4213f.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe    -o CMakeFiles/cmTC_4213f.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: fatal error: dinput.h: No such file or directory
+ #include <dinput.h>
+                    ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file xinput.h exists failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_e5df1 && [1/2] Building C object CMakeFiles/cmTC_e5df1.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_e5df1.dir/CheckIncludeFile.c.obj 
+C:\MinGW\bin\gcc.exe    -o CMakeFiles/cmTC_e5df1.dir/CheckIncludeFile.c.obj -c C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: fatal error: xinput.h: No such file or directory
+ #include <xinput.h>
+                    ^
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test _GLFW_HAS_64ASLR failed with the following output:
+Change Dir: C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe cmTC_8ca80 && [1/2] Building C object CMakeFiles/cmTC_8ca80.dir/src.c.obj
+[2/2] Linking C executable cmTC_8ca80.exe
+FAILED: cmTC_8ca80.exe 
+cmd.exe /C "cd . && C:\MinGW\bin\gcc.exe -Wl,--high-entropy-va  CMakeFiles/cmTC_8ca80.dir/src.c.obj -o cmTC_8ca80.exe -Wl,--out-implib,libcmTC_8ca80.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cmd.exe /C "cd /D C:\Users\Blind\Desktop\Workspace\HPRC\Ground-Station-Frontend-CPP\cmake-build-debug\CMakeFiles\CMakeTmp && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/cmake-build-debug/CMakeFiles/CMakeTmp/cmTC_8ca80.exe -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out""
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: unrecognized option '--high-entropy-va'
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: use the --help option for usage information
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
