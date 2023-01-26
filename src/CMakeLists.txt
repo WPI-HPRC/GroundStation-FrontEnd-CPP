@@ -1,5 +1,5 @@
 include_directories(../includes)
-include(C:/vcpkg/scripts/buildsystems/vcpkg.cmake)
+#include(C:/vcpkg/scripts/buildsystems/vcpkg.cmake)
 include(FetchContent) #Cmake Module to fetch libraries
 
 # Fetch imgui, glad, and glm
