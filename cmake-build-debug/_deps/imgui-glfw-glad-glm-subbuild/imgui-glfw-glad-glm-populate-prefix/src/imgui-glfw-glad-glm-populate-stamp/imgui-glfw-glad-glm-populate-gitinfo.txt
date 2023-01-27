@@ -1,3 +1,0 @@
-repository='https://github.com/cmmw/imgui-glfw-glad-glm.git'
-module=''
-tag='origin'

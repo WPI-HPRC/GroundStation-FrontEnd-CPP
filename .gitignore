@@ -30,6 +30,20 @@
 *.exe
 *.out
 *.app
+src/Ground_Station
 
 # Config Files
 .idea
+
+# Build
+build/
+cmake-build-debug/
+_deps/
+CMakeFiles/
+CMakeDoxy*
+CMakeCache.txt
+cmake_install.cmake
+src/cmake_install.cmake
+Makefile
+src/Makefile
+imgui.ini

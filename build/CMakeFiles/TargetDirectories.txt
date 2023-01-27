@@ -1,3 +1,0 @@
-C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Blind/Desktop/Workspace/HPRC/Ground-Station-Frontend-CPP/build/src/CMakeFiles/Ground_Station_Frontend_CPP.dir
